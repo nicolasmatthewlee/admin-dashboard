@@ -62,14 +62,21 @@
 /* project-content */
 
 .project-content {
-    background-color: yellow;
+    grid-area: 2 / 2 / span 2 / span 1;
+    background-color: rgb(237, 235, 235);
     font-size: 12px;
 }
 
+.project-content-title {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
 .project-grid-container {
-    background-color: rgb(237, 235, 235);
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 10px;
     padding: 10px;
 }
