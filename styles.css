@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(237, 235, 235);
+}
+
 .grid-container {
     display: grid;
     grid: auto 1fr 1fr / 190px 3fr 1fr;
@@ -67,7 +71,7 @@
     font-size: 12px;
 }
 
-.project-content-title, .announcements-content-title {
+.project-content-title, .announcements-content-title, .trending-content-title {
     font-size: 15px;
     font-weight: 600;
     padding-left: 10px;
@@ -123,6 +127,7 @@
     background-color: white;
     gap: 5px;
     flex: 1;
+    margin-right: 10px;
 }
 
 .announcement {
@@ -133,5 +138,39 @@
 
 .trending-content {
     grid-area: 3 / 3 / span 1 / span 1;
-    background-color: pink;
+    background-color: rgb(237, 235, 235);
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.trending-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.trending-user {
+    display: flex;
+    flex: 1;
+    justify-items: center;
+    align-items: center;
+}
+
+.trending-user-info {
+    padding-left: 10px;
+}
+
+.trending-user-name {
+    padding-top: 2px;
+    font-weight: 200;
+}
+
+.trending-user-icon {
+    max-height: 30px;
 }
