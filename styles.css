@@ -32,7 +32,7 @@ body {
     justify-self: start;
 }
 
-.side-menu-bar-icon, .project-icon {
+.side-menu-bar-icon, .project-icon, .search-icon, .notifications-icon {
     max-height: 20px;
 }
 
@@ -44,23 +44,69 @@ body {
 
 .top-menu-bar-top {
     display: flex;
-    background-color: purple;
+    background-color: white;
     align-items: center;
     color: white;
+    padding: 20px;
 }
 
 .search-bar {
     flex: 1;
 }
 
+.search-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.notifications-icon {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.top-menu-bar-top>.profile-picture-settings {
+    max-height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top-menu-bar-top>.profile-name-settings {
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 .top-menu-bar-bottom {
     display: flex;
-    background-color: pink;
+    background-color: white;
     align-items: center;
+    padding-bottom: 20px;
+}
+
+.top-menu-bar-bottom>.profile-picture {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.top-menu-bar-bottom>.greeting>.greeting-text {
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.top-menu-bar-bottom>.greeting>.profile-name {
+    font-weight: 600;
 }
 
 .top-menu-bar-bottom>.spacer {
     flex: 1;
+}
+
+.top-menu-bar-bottom>button {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;
 }
 
 /* project-content */
