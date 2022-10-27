@@ -140,6 +140,7 @@ body {
     grid-area: 2 / 2 / span 2 / span 1;
     background-color: var(--main-gray);
     font-size: 12px;
+    overflow: scroll;
 }
 
 .project-content-title, .announcements-content-title, .trending-content-title {
@@ -188,6 +189,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 12px;
+    min-width: 200px;
 }
 
 .announcements-content-title {
@@ -260,4 +262,32 @@ body {
 
 .trending-user-icon {
     max-height: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-container {
+        grid: auto 1fr 1fr / 190px 1fr;
+        /* row heights / column widths */
+    }
+    .announcements-content {
+        display: none;
+    }
+    .trending-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid: auto auto / 1fr;
+    }
+    .top-menu-bar {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    .project-content {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    .side-menu-bar {
+        display: none;
+    }
 }
