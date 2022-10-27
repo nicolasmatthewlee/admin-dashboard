@@ -81,6 +81,11 @@ body {
     background-color: white;
     align-items: center;
     padding-bottom: 20px;
+    box-shadow: 0 8px 10px -10px darkgray;
+    /* x-offset y-offset color */
+    position: relative;
+    /* necessary for shadow to show */
+    
 }
 
 .top-menu-bar-bottom>.profile-picture {
