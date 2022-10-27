@@ -303,8 +303,4 @@ body {
     .project-content {
         width: 100vw;
     }
-
-    .top-menu-bar-bottom>.greeting>.profile-name:after {
-        content: none;
-    }
 }
