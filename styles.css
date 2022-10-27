@@ -247,17 +247,21 @@ body {
     flex-direction: column;
     background-color: white;
     margin-bottom: 20px;
-    align-items: center;
+    align-items: left;
     margin-right: 10px;
     border-radius: 5px;
-    box-shadow: 0px 2px 4px lightgray
+    box-shadow: 0px 2px 4px lightgray;
 }
 
 .trending-user {
     display: flex;
-    flex: 1;
     justify-items: center;
     align-items: center;
+    height: 50px;
+}
+
+.trending-user:first-of-type {
+    margin-top: 10px
 }
 
 .trending-user-info {
@@ -270,7 +274,19 @@ body {
 }
 
 .trending-user-icon {
-    max-height: 30px;
+    max-height: 40px;
+    padding-left: 20px;
+}
+
+.trending-user-quote {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 5px;
+    margin-right: 20px;
+    text-align: left;
+    width: 20px;
+    flex: 1;
 }
 
 @media screen and (max-width: 1000px) {
