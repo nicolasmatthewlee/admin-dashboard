@@ -63,6 +63,7 @@ body {
 .search-bar {
     flex: 3;
     max-width: 500px;
+    min-width: 190px;
     border-radius: 12px;
     background-color: var(--main-gray);
     height: 24px;
@@ -105,7 +106,7 @@ body {
 }
 
 .top-menu-bar-bottom>.profile-picture {
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 
@@ -116,6 +117,8 @@ body {
 
 .top-menu-bar-bottom>.greeting>.profile-name {
     font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .top-menu-bar-bottom>.spacer {
@@ -283,7 +286,7 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     .grid-container {
         grid: auto auto / 1fr;
     }
@@ -299,5 +302,9 @@ body {
 
     .project-content {
         width: 100vw;
+    }
+
+    .top-menu-bar-bottom>.greeting>.profile-name:after {
+        content: none;
     }
 }
