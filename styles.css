@@ -68,6 +68,11 @@ body {
     background-color: var(--main-gray);
     height: 24px;
     border: 0px;
+    padding-left: 10px;
+}
+
+.search-bar:focus {
+    outline: none;
 }
 
 .top-menu-bar-top>.spacer {
