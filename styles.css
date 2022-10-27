@@ -81,7 +81,7 @@ body {
     background-color: white;
     align-items: center;
     padding-bottom: 20px;
-    box-shadow: 0 8px 10px -10px darkgray;
+    box-shadow: 0 8px 10px -10px lightgray;
     /* x-offset y-offset color */
     position: relative;
     /* necessary for shadow to show */
@@ -141,6 +141,9 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+    border-left: 8px solid gold;
+    box-shadow: 0px 2px 4px lightgray;
 }
 
 .project-title, .announcement-title {
@@ -179,10 +182,21 @@ body {
     gap: 5px;
     flex: 1;
     margin-right: 10px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 2px 4px lightgray;
+    padding: 20px;
+    gap: 10px;
 }
 
 .announcement {
-    padding: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.announcement:last-of-type {
+    border-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 /* trending */
@@ -204,6 +218,8 @@ body {
     margin-bottom: 20px;
     align-items: center;
     margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px lightgray
 }
 
 .trending-user {
